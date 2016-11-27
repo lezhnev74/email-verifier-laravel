@@ -1,0 +1,31 @@
+{
+  "name": "lezhnev74/email-verifier-laravel",
+  "description": "Laravel package to add verifying that user owns an email by sending him a special verification message.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dmitriy Lezhnev",
+      "email": "lezhnev.work@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "lezhnev74/email-verifier": "dev-master",
+    "illuminate/support": "~5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.5.*"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/lezhnev74/email-verifier"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Lezhnev74\\EmailVerifier\\Tests\\": "tests/",
+      "Lezhnev74\\EmailVerifierLaravel\\": "src/"
+    }
+  }
+}
