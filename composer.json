@@ -8,7 +8,7 @@
       "email": "lezhnev.work@gmail.com"
     }
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "require": {
     "illuminate/support": "~5",
     "lezhnev74/email-verifier": "dev-master"
