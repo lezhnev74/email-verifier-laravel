@@ -3,7 +3,7 @@
         colors="true"
         convertErrorsToExceptions="true"
         processIsolation="false"
-        stopOnError="true"
+        stopOnFailure="true"
         strict="false"
         verbose="true"
 
@@ -12,7 +12,7 @@
 
     <testsuites>
         <testsuite name="AllTests">
-            <directory>tests</directory>
+            <directory suffix=".php">tests</directory>
         </testsuite>
     </testsuites>
 

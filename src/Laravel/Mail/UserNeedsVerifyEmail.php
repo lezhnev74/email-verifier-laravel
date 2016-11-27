@@ -13,7 +13,6 @@ class UserNeedsVerifyEmail extends Mailable
 
     private $link;
 
-
     public function __construct(string $verification_link)
     {
         $this->link = $verification_link;
@@ -26,6 +25,11 @@ class UserNeedsVerifyEmail extends Mailable
      */
     public function build()
     {
-        return $this->view('email-verifier-laravel::verification-email', ['link' => $this->link]);
+        return $this->view('email-verifier-laravel::verification-email', ['link' => $this->getLink()]);
+    }
+
+    public function getLink()
+    {
+        return $this->link;
     }
 }

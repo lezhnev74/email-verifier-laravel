@@ -9,7 +9,6 @@ class Dispatcher implements EventDispatcher
 {
     public function fireEmailVerified(EmailVerified $event)
     {
-        \Log::info('Emit event', ['event' => $event]);
         event($event);
     }
 
